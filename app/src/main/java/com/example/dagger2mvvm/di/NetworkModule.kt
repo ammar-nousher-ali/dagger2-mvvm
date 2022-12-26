@@ -4,11 +4,13 @@ import com.example.dagger2mvvm.retrofit.FakerApi
 import com.example.dagger2mvvm.utils.Constants
 import dagger.Module
 import dagger.Provides
+import dagger.hilt.InstallIn
+import dagger.hilt.migration.DisableInstallInCheck
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.create
 import javax.inject.Singleton
 
+@DisableInstallInCheck
 @Module
 class NetworkModule {
 
